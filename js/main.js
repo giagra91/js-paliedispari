@@ -1,6 +1,6 @@
 // Esercizio parola palindroma
 const userWord = prompt(`Inserisci una parola`).toLowerCase().trim();
-
+let palyndromeOutput = document.getElementById(`palyndrome-output`);
 
 function palyndromeCheck(word){
 
@@ -12,9 +12,12 @@ function palyndromeCheck(word){
 
     if (!isNaN(word)){
         console.log(`Non hai inserito una parola`);
+        palyndromeOutput.innerHTML=`Non hai inserito una parola`;
     } else if (word == reverseNewWord) {
+        palyndromeOutput.innerHTML=`La parola è palindroma`;
         return true;
     } else {
+        palyndromeOutput.innerHTML=`La parola non è palindroma`;
         return false;
     }
 
