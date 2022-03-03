@@ -22,12 +22,13 @@ function palyndromeCheck(word){
     }
 
 }
+palyndromeCheck(userWord);
 
 // Esercizio pari e dispari
 
 let userChoice = prompt(`Scegli tra pari e dispari.`).toLowerCase().trim();
 
-// while (userChoice.valueOf() != "pari" || userChoice.valueOf() != "dispari" ){
+// if (userChoice.valueOf() != "pari" || userChoice.valueOf() != "dispari" ){
 //     alert(`Hai inserito un numero non valido`);
 //     console.log("pari")
 //     console.log(userChoice)
