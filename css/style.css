@@ -1,0 +1,6 @@
+#my-top-container,
+#my-bottom-container{
+    margin: auto;
+    width: 500px;
+    height: 200px;
+}
