@@ -39,12 +39,9 @@ const sumNumber = parseInt( userNumber + pcNumber);
 console.log(pcNumber)
 console.log(sumNumber)
 
-
 function checkSum(number){
 
-    if (isNaN(number)){
-        console.error(`Il valore non è un numero`)
-    } else if (number % 2 == 0){
+    if (number % 2 == 0){
         console.log (`pari`)
     } else {
         console.log(`dispari`)
@@ -53,3 +50,9 @@ function checkSum(number){
 
 // const gameSum = checkSum(sumNumber);
 console.log(checkSum(sumNumber))
+
+if (userChoice == "pari"){
+    console.log(`Hai vinto!`);
+} else {
+    console.log(`Ha vinto il computer`)
+}
