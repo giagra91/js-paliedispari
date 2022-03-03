@@ -23,11 +23,16 @@ function palyndromeCheck(word){
 
 }
 
-console.log(palyndromeCheck(userWord));
-
 // Esercizio pari e dispari
 
 let userChoice = prompt(`Scegli tra pari e dispari.`).toLowerCase().trim();
+
+// while (userChoice.valueOf() != "pari" || userChoice.valueOf() != "dispari" ){
+//     alert(`Hai inserito un numero non valido`);
+//     console.log("pari")
+//     console.log(userChoice)
+//     userChoice = prompt(`Scegli tra pari e dispari.`).toLowerCase().trim();
+// }
 
 let userNumber = parseInt(prompt(`Inserisci un numero tra 1 e 5`));
 
