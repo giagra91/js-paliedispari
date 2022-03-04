@@ -10,19 +10,23 @@ function palyndromeCheck(word){
 
     const reverseNewWord = reverseNewArrayWord.join(``);
 
-    if (!isNaN(word)){
-        console.log(`Non hai inserito una parola`);
-        palyndromeOutput.innerHTML=`Non hai inserito una parola`;
-    } else if (word == reverseNewWord) {
-        palyndromeOutput.innerHTML=`La parola è palindroma`;
+    if (word == reverseNewWord) {
         return true;
-    } else {
-        palyndromeOutput.innerHTML=`La parola non è palindroma`;
+    } else {    
         return false;
     }
 
 }
 palyndromeCheck(userWord);
+
+if (!isNaN(userWord)){
+    console.log(`Non hai inserito una parola`);
+    palyndromeOutput.innerHTML=`Non hai inserito una parola`;
+} else if (palyndromeCheck(userWord)) {
+    palyndromeOutput.innerHTML=`La parola è palindroma`;
+} else {
+    palyndromeOutput.innerHTML=`La parola non è palindroma`;
+}
 
 // Esercizio pari e dispari
 
