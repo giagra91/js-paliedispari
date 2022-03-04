@@ -1,8 +1,8 @@
 // Esercizio parola palindroma
 const userWord = prompt(`Inserisci una parola`).toLowerCase().trim();
-let palyndromeOutput = document.getElementById(`palyndrome-output`);
+let palindromeOutput = document.getElementById(`palindrome-output`);
 
-function palyndromeCheck(word){
+function palindromeCheck(word){
 
     const newArrayWord = word.split(``);
 
@@ -17,15 +17,15 @@ function palyndromeCheck(word){
     }
 
 }
-palyndromeCheck(userWord);
+palindromeCheck(userWord);
 
 if (!isNaN(userWord)){
     console.log(`Non hai inserito una parola`);
-    palyndromeOutput.innerHTML=`Non hai inserito una parola`;
-} else if (palyndromeCheck(userWord)) {
-    palyndromeOutput.innerHTML=`La parola è palindroma`;
+    palindromeOutput.innerHTML=`Non hai inserito una parola`;
+} else if (palindromeCheck(userWord)) {
+    palindromeOutput.innerHTML=`La parola è palindroma`;
 } else {
-    palyndromeOutput.innerHTML=`La parola non è palindroma`;
+    palindromeOutput.innerHTML=`La parola non è palindroma`;
 }
 
 // Esercizio pari e dispari
